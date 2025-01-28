@@ -6,7 +6,7 @@ import { useContract } from './useContracts';
 import viteLogo from '/vite.svg';
 
 function App() {
-    const [count, setCount] = useState(0);
+    const [count, _] = useState(0);
     const { mint } = useContract();
 
     return (
