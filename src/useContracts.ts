@@ -22,7 +22,7 @@ export function useContract() {
         const loadContract = async () => {
             try {
                 const contr = LingMine.createFromAddress(
-                    Address.parse('kQD8Rdciv3FAKudWu94d43wRFtwE5xGZU1fGjPW9lV2HAaPF'),
+                    Address.parse('kQBmjPPYaw6Zu8rS-cSYBVd5K6Vbq4raTyqwc0EMrAL4fIW3'),
                 );
                 // @ts-ignore
                 const openedContract = client.open(contr) as unknown as OpenedContract<LingMine>;
@@ -60,7 +60,7 @@ export function useContract() {
 
     useEffect(() => {
         let sender: Sender = {
-            address: Address.parse(tonConnectUI.account?.address || 'kQD8Rdciv3FAKudWu94d43wRFtwE5xGZU1fGjPW9lV2HAaPF'), // Здесь исправлено на Address.parse
+            address: Address.parse(tonConnectUI.account?.address || 'kQBmjPPYaw6Zu8rS-cSYBVd5K6Vbq4raTyqwc0EMrAL4fIW3'), // Здесь исправлено на Address.parse
             send: async (args: SenderArguments) => {
                 tonConnectUI.sendTransaction({
                     messages: [
