@@ -1,3 +1,4 @@
+import { TonConnectButton } from "@tonconnect/ui-react";
 import { useState } from "react";
 import "./App.css";
 import { useContract } from "./useContracts";
@@ -9,6 +10,7 @@ function App() {
 	return (
 		<>
 			<div className="card">
+				<TonConnectButton />
 				<button
 					style={{ height: "100px", width: "200px", borderRadius: "24px" }}
 					onClick={() => mint()}
