@@ -26,8 +26,8 @@ export function useContract() {
 				const contr = LingMine.createFromAddress(
 					Address.parse("kQBLnE_2HHOBSHUpcWWWzyBC7SAjGVhHrVUXEpnWx9JWPlXL")
 				);
-				// @ts-ignore
 				const openedContract = client.open(
+					// @ts-ignore
 					contr
 				) as unknown as OpenedContract<LingMine>;
 				console.log("opened contr", openedContract);
